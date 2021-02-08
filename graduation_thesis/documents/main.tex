@@ -1,0 +1,179 @@
+
+
+\documentclass[a4paper,12pt]{jarticle}
+
+\input{include/macro.tex}
+\input{include/preamble.tex}
+
+% 表紙
+\title{卒業論文\\
+早戻り機構を有するロボットハンドへの柔軟指の導入\\
+% {\large No title}
+}
+\author{\vspace{90mm}\\
+指導教員：\ 西田 \hspace{0mm} 健 准教授\\
+九州工業大学\ \hspace{0mm} 工学部\\
+機械知能工学科\ \hspace{0mm} 知能制御工学コース \\
+\vspace{0mm}\\
+学籍番号：\ 15104026\\
+提出者氏名：\ 川崎 \hspace{0mm} 雄太朗\\\vspace{5mm}\\ }
+\date{平成31年\ 2月\ 13日}
+
+\begin{document}
+
+\titlepage
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% 目次
+\thispagestyle{empty}
+\input{contents/abstruct.tex}
+\newpage
+\tableofcontents
+% 最初のやつ
+
+\newpage
+\input{contents/background.tex}
+\newpage
+%\input{contents/structure.tex}
+\newpage
+\input{contents/principle.tex}
+\newpage
+\input{contents/experiments.tex}
+\newpage
+\input{contents/discussion.tex}
+\newpage
+\input{contents/conclutions.tex}
+\input{contents/acknowledgement.tex}
+
+
+
+\begin{thebibliography}{99}
+\addcontentsline{toc}{section}{参考文献}
+
+\bibitem{end} Tetsuyou Watanabe, Kimitoshi Yamazaki, Yasuyoshi Yokoko-hji, “Survey of robotic manipulation studies intending practi-cal applications in real environments -object recognition, softrobot hand, and challenge program and benchmarking-” , Advanced Robotics , Vol. 31, Iss. 19–20, pp. 1114-1132, 2017.
+\bibitem{soft} 中村太郎，”生物・生体の機能を規範としたソフトロボティクス”,システム/制御/情報, 61巻, 7号, pp.265-270, 2017.
+
+\bibitem{jam}J. R. Amend Jr, E. Brown, N. Rodenberg, H. M. Jaeger, H. Lipson: “A Positive Pressure
+Universal Gripper Based on the Jamming of Granular Material,” IEEE trans. on Robotics,
+Vol.28, pp.341–350, 2012.
+
+\bibitem{MR}T . Nishida , Y . Okatani , K . Tadakuma ,
+“ Development of universal robot gripper using
+MR α fluid, ” Int . Journal of Humanoid Robotics , vol.13 ,No.4 ,p13,2016.
+
+\bibitem{sh_hand} 天呑将成，鈴木陽介,辻徳生，渡辺哲陽,”はや戻り機構を用いた高速グリッパの開発", SICE, 2018.
+
+\bibitem{hayamodori} 熊谷英樹，”必携「からくり設計」メカニズム定石集”,日刊工業新聞社，p140,2017.
+
+\bibitem{gel} 柴山充弘，”ゲルの物理と化学の新展開”,日本物理学会誌 Vol 72,No.4,2017, pp.226-227, 2017.
+
+
+
+
+
+
+
+
+  %\bibitem{Muhammad} Raúl Mur-Artal, J. M. M. Montiel and Juan D. Tardós. ORB-SLAM: A Versatile and Accurate Monocular SLAM System. IEEE Transactions on Robotics, vol. 31, no. 5, pp. 1147-1163, 2015.
+  
+
+%\bibitem{OSRF} ”Open Robotics", https://www.osrfoundation.org/.
+%\bibitem{ROS_book}"西田健，森田賢，岡田浩之，原祥堯，山崎公俊，田向権，垣内洋平，大川一也，斎藤功，田中良道，有田裕太，石田祐太郎","実用ロボット開発のためのROSプログラミング．”，森北出版株式会社，pp.1-2, 2018.  
+%\bibitem{ROS_book_PCL}"西田健，森田賢，岡田浩之，原祥堯，山崎公俊，田向権，垣内洋平，大川一也，斎藤功，田中良道，有田裕太，石田祐太郎","実用ロボット開発のためのROSプログラミング．”，森北出版株式会社，pp.5, 2018.  
+
+
+\end{thebibliography}
+
+% 付録の始まり
+\appendix
+%\def\thesection{付録\Alph{section}}
+%\def\thesubsection{\Alph{section}\arabic{subsection}}
+
+%\makeatletter
+%\renewcommand{\theequation}{\Alph{section}.\arabic{equation}}
+%\@addtoreset{equation}{section}
+%\makeatother
+% \setcounter{page}{1}
+% ODEの説明
+%\section{ }
+%\label{sec:}
+
+
+% % 図の挿入
+
+% \begin{figure}[b]
+%  \begin{center}
+%   \includegraphics[scale=0.9]{../figure/circuit.eps}
+%   \caption{Uncontrolled converter}
+%   \label{circuit}
+%  \end{center}
+% \end{figure}
+
+
+% % 表の挿入
+
+% \begin{table}[htb]
+%   \begin{center}
+%     \caption{各素子のパラメータ}
+%     \begin{tabular}{c|c|c} \hline
+%       定数名[単位] & 記号 & 値 \\ \hline \hline
+%       周波数[Hz] & $f_U,f_V,f_W$ & 120 \\ \hline
+%                      & $\phi_U$ & $\frac{2\pi}{3}$ \\
+%       初期位相角[rad] & $\phi_V$ & $\frac{4\pi}{3}$ \\
+%                      & $\phi_W$ & $2\pi$ \\ \hline
+%       抵抗[$\Omega$] & $R$ & 10 \\ \hline
+%     \end{tabular}
+%     \label{param}
+%   \end{center}
+% \end{table}
+
+
+% % 図の挿入
+
+% \begin{figure}[tb]
+%  \centering
+%  \vspace{0.5cm}
+%  \includegraphics[scale=0.85]{../figure/waves.eps}\\
+%  \hspace{0.0cm}
+%  % 入力と出力\\
+%  % \\
+%  % \vspace{1.2cm}
+%  % \includegraphics[scale=0.825]{../figure/output.eps}\\
+%  % (b) 出力の電位\\
+%  % \\
+%  \caption{シミュレーションにより得られた各電源電圧(上)と出力電位(下)の波形}
+%  \label{wave}
+% \end{figure}
+
+% \newpage
+
+% % 図を並べて挿入
+
+% \begin{figure}[tb]
+%  \centering
+%  \subfloat[区間1における回路動作]{\includegraphics[scale=0.5]{../figure/kukan_1.eps}}
+%  \hspace{1.5cm}
+%  \subfloat[区間2における回路動作]{\includegraphics[scale=0.5]{../figure/kukan_2.eps}}
+% \\
+%  \vspace{0.5cm}
+%  \subfloat[区間3における回路動作]{\includegraphics[scale=0.5]{../figure/kukan_3.eps}}
+%  \hspace{1.5cm}
+%  \subfloat[区間4における回路動作]{\includegraphics[scale=0.5]{../figure/kukan_4.eps}}
+% \\
+%  \vspace{0.5cm}
+%  \subfloat[区間5における回路動作]{\includegraphics[scale=0.5]{../figure/kukan_5.eps}}
+%  \hspace{1.5cm}
+%  \subfloat[区間6における回路動作]{\includegraphics[scale=0.5]{../figure/kukan_6.eps}}
+% \\
+%  \caption{各区間での回路動作の様子}
+%  \label{circuit_kaku}
+% \end{figure}
+
+% % 文中へのラベリング
+% {\bf Fig. }\ref{circuit_kaku}に示す〜
+
+
+
+\end{document}
